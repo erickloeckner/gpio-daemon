@@ -1,0 +1,12 @@
+[Unit]
+Description=GPIO Daemon
+
+[Service]
+ExecStart=$path_to_binary $path_to_config.toml
+Restart=always
+KillSignal=SIGINT
+StandardError=syslog
+User=$user
+
+[Install]
+WantedBy=multi-user.target
