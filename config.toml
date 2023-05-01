@@ -1,0 +1,12 @@
+[main]
+debug = false
+active_high = false
+debounce_time = 0.5
+
+[gpio]
+chip = "/dev/gpiochip0"
+pin = 4
+
+[action]
+command = ""
+cooldown = 2.0
